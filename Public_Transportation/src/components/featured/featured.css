@@ -1,0 +1,49 @@
+.featured{
+  margin-top: 100px;
+  width: 100%;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: 1;
+  gap: 30px;
+  z-index: 1;
+}
+
+.featuredItem{
+  position: relative;
+  color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 250px;
+  flex:2;
+  cursor: pointer;
+}
+.Fnum{
+  color: white;
+}
+.featuredImg{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 1.1s;
+}
+.featured :hover .featuredImg{
+  transform: scale(1.1);
+}
+
+.featuredTitles{
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+.btnDetails{
+  width: 100px;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(3, 12, 113);
+  color: aliceblue;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+.btnDetails:hover{
+  background-color: rgb(29, 10, 179);
+}

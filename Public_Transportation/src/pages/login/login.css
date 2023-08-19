@@ -1,0 +1,113 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.userImg{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.lContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 1%;
+}
+header {
+  background-color: rgb(0, 0, 89);
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h2 {
+  color: white;
+  font-family: cursive;
+}
+.loginInput {
+  border: none;
+  border-bottom: 2px solid #d1d1d4;
+  width: 230px;
+  height: 30px;
+  margin-top: 1%;
+  margin-left: 41%;
+}
+.lButton {
+  border: none;
+  width: 235px;
+  height: 30px;
+  margin-top: 1%;
+  margin-left: 41%;
+  color: white;
+  background-color: rgb(0, 0, 89);
+  border-radius: 3%;
+  cursor: pointer;
+}
+.lButton:hover {
+  background-color: rgb(0, 0, 158);
+}
+.ft {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5%;
+  margin-left: 2%;
+}
+.cr {
+  margin-left: 2%;
+  margin-top: 1%;
+  font-family: serif;
+}
+.signText {
+  margin-left: 40%;
+  margin-top: 5%;
+  color: #e46904;
+}
+p {
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+  position: relative;
+  right: 15px;
+}
+.g-icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+  margin-right: 7%;
+}
+.m-icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+  position: relative;
+  right: 65px;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: 15px;
+}
+.p-icon {
+  position: relative;
+  top: 50px;
+  right: 90px;
+}
+.logindesc {
+  font-family: serif;
+}
+.rrtext {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  right: 15px;
+  padding-top: 1%;
+  font-size: small;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.rrtext :hover {
+  color: rgb(172, 115, 10);
+}

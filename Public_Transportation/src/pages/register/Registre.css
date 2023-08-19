@@ -1,0 +1,56 @@
+.regitre {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.rCreate {
+  display: flex;
+  justify-content: center;
+  color: rgb(209, 136, 0);
+}
+.ritem {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+.inpt {
+  border: none;
+  border-bottom: 2px solid #d1d1d4;
+  width: 25%;
+  height: 30px;
+  padding: 5px;
+}
+.formInput {
+  display: flex;
+  justify-content: center;
+}
+.rbtn {
+  position: relative;
+  top: 10px;
+  left: 45%;
+  width: 150px;
+  padding: 10px;
+  border: none;
+  border-radius: 5%;
+  background-color: rgb(17, 0, 128);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.rbtn:hover {
+  background-color: rgb(11, 69, 184);
+}
+.left {
+  flex: 1;
+  text-align: center;
+}
+.rimg {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}

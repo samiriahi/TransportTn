@@ -1,0 +1,113 @@
+.navbar {
+  width: 100vw;
+  height: 10vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("https://cdn.pixabay.com/photo/2015/03/30/12/50/bus-698688_1280.jpg");
+  background-size: cover;
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.userImg img {
+  position: relative;
+  display: inline-block;
+  width: 50px; 
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  right: 320px;
+}
+
+
+
+.user-container {
+  display: flex;
+  align-items: center;
+}
+
+.navContainer {
+  width: 100%;
+  max-width: 1024px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: 1000;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  left: 100px;
+}
+.navButton {
+  position: relative;
+  right: 10px;
+  padding: 10px 33px;
+  background-color: #052785;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navButton:hover {
+  background-color: #176396;
+}
+
+.navButton:focus {
+  outline: none;
+}
+
+.navButton:active {
+  background-color: #1f618d;
+}
+
+.navButtonL {
+  padding: 10px 40px;
+  background-color: #052785;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navButtonL:hover {
+  background-color: #176396;
+}
+
+.navButtonL:focus {
+  outline: none;
+}
+
+.navButtonL:active {
+  background-color: #1f618d;
+}
+
+
+.logoutButton {
+  background-color: #08337d;
+  color: white;
+  padding: 6px 12px; /* Adjust padding to your preference */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  position: relative;
+  left: 460px;
+}
+
+.logoutButton:hover {
+  background-color: #0a4aa0; /* Change to a darker shade for hover effect */
+  transform: scale(1.05); /* Add a slight scale effect on hover */
+}

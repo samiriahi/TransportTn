@@ -1,0 +1,229 @@
+.card {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.commentSpace {
+  margin-left: 135px;
+}
+
+.commentContent{
+  text-align: left;
+}
+
+
+.cardDetails {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.cardImage {
+  width: 20%;
+}
+
+.caImg {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.caDesc {
+  width: 100%;
+  padding: 20px;
+}
+
+.caTitle {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.ldate{
+  position: relative;
+  left: 3px;
+  align-items: center;
+}
+
+
+.crois{
+  position: relative;
+  left: 365px;
+  color: grey;
+}
+.caDistance{
+  font-size: 12px;
+  background-color: #008009;
+  color: white;
+  width: max-content;
+  padding: 3px;
+  border-radius: 5px;
+ display: flex;
+ margin-left: 10px;
+ margin-right: 10px;
+ padding-left: 10px;
+  padding-right: 10px;
+}
+.caDistance1{
+  display: flex;
+  font-size: 12px;
+  background-color: #ed4c00;
+  color: white;
+  width: max-content;
+  padding: 3px;
+  border-radius: 5px;
+  margin-left: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.caDis{
+  display: flex;
+}
+.tarif{
+  background-color: #008009;
+  border-radius: 5px;
+  color: aliceblue;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 5px;
+ position: relative;
+ top: 20px;
+}
+.caTime{
+  padding-right: 10px;
+}
+.workingHours {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.workingHourItem {
+  font-size: 14px;
+  margin-right: 10px; 
+  color: #3b3a3a;
+}
+
+
+
+.stationsList {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.stationItem {
+  background-color: #f0f0f0;
+  color: #000000;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+
+.workingHourItem {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+.stationIcon {
+  margin-right: 4px;
+}
+
+.caTaxiOp{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -8px;
+}
+.caSubtitle,
+.caFeatures,
+.caCancelOp,
+.caCancelOpSubtitle {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.caCheckButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.commentSection {
+  width: 30%;
+  padding-left: 20px;
+}
+
+.commentTitle {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.commentList {
+  list-style: none;
+  padding-left: 0;
+}
+
+.commentItem {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.commentUser {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.commentUser img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.commentUser span {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.commentList p {
+  margin: 0;
+}
+
+.commentInput {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.commentButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+.caUser{
+ display: flex;
+ position: relative;
+ left: 320px;
+ bottom: 15px;
+ cursor: pointer;
+}

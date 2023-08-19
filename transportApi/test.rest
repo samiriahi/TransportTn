@@ -1,0 +1,202 @@
+### SIGNUP Request
+POST http://127.0.0.1:8000/signup 
+Content-Type: application/json
+
+{ "username": "samiRiahi2", "password": "samiRiahi2", "email": "samiRiahi2@gmail.com", "is_admin":true, "imageUrl":"https://th.bing.com/th/id/OIP.awAiMS1BCAQ2xS2lcdXGlwHaHH?w=202&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7"}
+
+
+### LOGIN Request
+POST http://127.0.0.1:8000/login 
+Content-Type: application/json
+
+{"username": "samiRiahi2", "password": "123456789"}
+
+
+### TestToken Request
+GET http://127.0.0.1:8000/test_token 
+Content-Type: apxplication/json
+Authorization: Token b20a1730b52e45ab0d5c2b0592f4c0524e2f35b9
+
+### Get User List Request
+GET http://127.0.0.1:8000/users
+Content-Type: application/json
+
+### update User Request
+PUT http://localhost:8000/user/update/3/
+Content-Type: application/json
+
+{
+    "username": "samiRiahi2",
+    "password": "samiRiahi2"
+}
+
+
+
+### ajouter une instance de Metro
+POST http://127.0.0.1:8000/metros/add
+Content-Type: application/json
+
+{
+  "name": "Metro 5",
+  "depart": "Place de barcelone",
+  "destination": "Intilaka",
+  "ticketTarif": "0.6 DT",
+  "stations": ["Hbib Thameur", "Republique", "Bab el Khadhra",
+               "Bab Laassal","Bab saadoun","Mefteh saadallah","Cite Rommana",
+               "Campus","7 Novembre", "Les Jasmins","Ettahrir","Omran Superieure","Etadhamen"],
+  "working_hours": ["08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00"]
+}
+
+
+### Get Metros List Request
+GET http://127.0.0.1:8000/metros
+Content-Type: application/json
+
+### Get metro by id
+GET http://127.0.0.1:8000/get/1/
+Content-Type: application/json
+
+### Supprimer un métro
+DELETE http://127.0.0.1:8000/delete/3/
+
+### update une instance de Metro
+PUT http://127.0.0.1:8000/update/2/
+Content-Type: application/json
+
+{
+  "name": "Metro 2",
+  "depart": "Ariana",
+  "destination": "Place de Barcelone",
+  "ticketTarif": "0.5 DT",
+  "stations": ["Idependance", "El Fell", "10 decembre 1948",
+               "Cite sportive","La jeneusse", "Cite el khadhra","Cite Jardins","Palestine",
+               "Mohamed V","Nelson Mandela","Republique","Hbib Thameur"],
+  "working_hours": ["08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00"]
+}
+ 
+### Post Comment for metro 
+POST http://127.0.0.1:8000/post-comment/
+Content-Type: application/json
+
+{
+  "username": "samiRiahi2",
+  "metro_id": 1,
+  "content": "Ceci le contenu du 2eme commentaire ..."
+}
+
+### Get Comments List Request
+GET http://127.0.0.1:8000/comments/
+Content-Type: application/json
+
+### Delete Comment  Request
+DELETE http://127.0.0.1:8000/comment/13/delete/
+
+
+### add Train  Request  ### ### ### ### ### ############# traaain 
+POST http://127.0.0.1:8000/trains/add
+Content-Type: application/json
+
+{
+  "name": "Train Ligne A",
+  "depart": "Tunis",
+  "destination": "Erriadh",
+  "ticketTarif": "1.7 DT",
+  "stations": ["Djebel Jelloud", "Mégrine Riadh", "Mégrine",
+               "Sidi Rézig","Radès Lycée", "Radès","Radès Méliane", "Ezzahra",
+               "Lycée Ezzahra", "Boukornine","Hammam Lif","Arrêt du Stade", "Tahar-Sfar",
+               "Hammam Chott","Bir El Bey", "Borj Cédria","Erriadh"],
+  "working_hours": ["08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00"]
+}
+
+###   Get Trains List Request  
+GET http://127.0.0.1:8000/trains
+Content-Type: application/json
+
+### Get Train by id
+GET http://127.0.0.1:8000/train/get/3/
+Content-Type: application/json
+
+### Supprimer un Train
+DELETE http://127.0.0.1:8000/train/delete/1/
+
+### update une instance de Train
+PUT http://127.0.0.1:8000/train/update/2/
+Content-Type: application/json
+
+{  
+  "destination": "Erriadh"
+}
+
+
+### Post Comment  for train
+POST http://127.0.0.1:8000/add-train-comment/
+Content-Type: application/json
+
+{
+  "username": "samiRiahi2",
+  "train_id": 3,
+  "content": "Bad  Train  line to Ezzouhour..."
+}
+
+### Get Comments train List Request
+GET http://127.0.0.1:8000/all-train-comments/
+Content-Type: application/json
+
+### Delete Comment  Request
+DELETE http://127.0.0.1:8000/comment-train/6/delete/
+
+
+### add Bus  Request  ### ### ### ### ### ############# buuuus 
+POST http://127.0.0.1:8000/bus/add
+Content-Type: application/json
+
+{
+  "name": "Bus Ligne 527-B",
+  "depart": "Ariana Essoughra",
+  "destination": "Tunis",
+  "ticketTarif": "0.8 DT",
+  "stations": ["Ghazela", "Ariana", "10 decembre",
+               ",Cite EL khadhra"] ,
+  "working_hours": ["06:30", "07:30", "08:30", "09:30","10:30", "11:30", "12:30", "13:30"]
+}
+
+###   Get Bus List Request  
+GET http://127.0.0.1:8000/buss
+Content-Type: application/json
+
+### Get Bus by id
+GET http://127.0.0.1:8000/bus/get/3/
+Content-Type: application/json
+
+### Supprimer un Bus
+DELETE http://127.0.0.1:8000/bus/delete/2/
+
+
+### Post Comment  for Bus
+POST http://127.0.0.1:8000/add-bus-comment/
+Content-Type: application/json
+
+{
+  "username": "samiRiahi2",
+  "bus_id": 3,
+  "content": " this is a comment  ..."
+}
+
+### Get Comments Bus List Request
+GET http://127.0.0.1:8000/bus/comments/
+Content-Type: application/json
+
+### Delete Comment  Request
+DELETE http://127.0.0.1:8000/comment-bus/2/delete/
+
+
+### Search methode
+POST http://localhost:8000/api/search/
+Content-Type: application/json
+
+{
+  "type": "metro",
+  "depart": "PLACE",
+  "destination": "BEN arous",
+  "working_hours": "08:00"
+}
